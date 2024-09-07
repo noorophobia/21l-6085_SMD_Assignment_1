@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightgrey"
+        android:id="@+id/receiver_form_root"
+
+    tools:context=".ReceiverForm"
+    >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/receiver_details"
+            android:layout_margin="@dimen/margin_zero"
+            android:padding="@dimen/padding_medium"
+            android:textSize="@dimen/text_heading"
+            android:textColor="@color/white"
+            android:textAlignment="textStart"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_title"
+
+
+            />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="@dimen/edittext_width"
+        android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:background="@drawable/rounded_edittext"
+
+        android:padding="@dimen/padding_medium"
+        android:layout_margin="@dimen/margin_edittext"
+        android:hint="@string/email"
+        android:id="@+id/tfreceiveremail"
+          />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="@dimen/edittext_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_edittext"
+        android:padding="@dimen/padding_medium"
+        android:layout_margin="@dimen/margin_edittext"
+        android:hint="@string/full_name"
+        android:id="@+id/tfreceiverfullname"
+
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="@dimen/edittext_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_edittext"
+        android:padding="@dimen/padding_medium"
+        android:layout_margin="@dimen/margin_edittext"
+        android:inputType="phone"
+        android:hint="@string/contact_information"
+        android:id="@+id/tfreceivercontactinfo"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="@dimen/edittext_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_edittext"
+        android:padding="@dimen/padding_medium"
+        android:layout_margin="@dimen/margin_edittext"
+        android:hint="@string/country"
+        android:id="@+id/tfreceivercountry"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="@dimen/edittext_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_edittext"
+        android:padding="@dimen/padding_medium"
+         android:layout_marginTop="@dimen/margin_edittext_top"
+        android:hint="@string/address"
+        android:layout_marginBottom="@dimen/margin_edittext_bottom"
+        android:id="@+id/tfreceiveraddress"
+        />
+    <Button
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_button"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:id="@+id/btnnext"
+        />
+</LinearLayout>

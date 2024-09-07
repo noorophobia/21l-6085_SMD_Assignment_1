@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">21l-6085_SMD_Assignment_1</string>
+    <string name="sender_details">SENDER DETAILS</string>
+    <string name="email">Email</string>
+    <string name="full_name">Full Name</string>
+    <string name="contact_information">Contact Information</string>
+    <string name="country">Country</string>
+    <string name="address">ADDRESS</string>
+    <string name="next">NEXT</string>
+    <string name="receiver_details">RECEIVER DETAILS</string>
+    <string name="review_information_form">Review Information form</string>
+    <string name="name">Name</string>
+</resources>

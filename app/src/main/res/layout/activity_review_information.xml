@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/review_form_root"
+    android:background="@color/lightgrey"
+
+    tools:context=".ReviewInformation">
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:background="@color/lightgrey"
+
+            android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_column="2"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin"
+                android:text="@string/name"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin"
+                android:text="@string/country"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin"
+                android:text="@string/address"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin"
+                android:text="@string/email"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/contact_information"
+                android:textStyle="bold"
+
+
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_column="2"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            >
+
+            <TextView
+
+                android:id="@+id/senderName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/senderCountry"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/senderAddress"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/senderEmail"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/senderContactInfo"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+
+
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height"
+            android:layout_marginEnd="@dimen/margin"
+            >
+            <ImageView
+                android:layout_width="@dimen/image_width"
+                android:layout_height="@dimen/image_height"
+                android:src="@drawable/arrow_up_solid"
+                android:scaleType="fitStart"
+                android:layout_marginEnd="@dimen/margin_zero"
+android:padding="@dimen/padding_zero"
+
+                >
+
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="@dimen/image_width"
+                android:layout_height="@dimen/image_height"
+                android:scaleType="fitStart"
+                android:src="@drawable/arrow_down_solid"
+                android:layout_margin="@dimen/margin_zero"
+                android:padding="@dimen/padding_zero"
+                >
+
+
+            </ImageView>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_column="2"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            >
+
+            <TextView
+
+                android:id="@id/tfreceiverfullname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@id/tfreceivercountry"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@id/tfreceiveraddress"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@id/tfreceiveremail"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@id/tfreceivercontactinfo"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+
+
+                />
+        </TableRow>
+
+    </TableLayout>
+    </HorizontalScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addfab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+         android:src="@drawable/plus_solid"
+        app:maxImageSize="@dimen/image_size"
+         app:backgroundTint="@color/red"
+
+        android:layout_margin="@dimen/layout_margin" />
+</RelativeLayout>
